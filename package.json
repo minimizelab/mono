@@ -1,6 +1,9 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "mini_mono",
   "version": "0.0.0",
+  "description": "minimize mono repo",
+  "repository": "git@github.com:minimizelab/mono.git",
+  "author": "minimize <hello@minimize.se>",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,7 +13,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "prettier": "^2.5.1",
@@ -36,7 +39,6 @@
     }
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": "14.x"
   }
 }
